@@ -78,10 +78,7 @@ const examples = [
   },
   {
     name: '5-multistage',
-    title: locate(
-      '多层 Modal \n 支持多层叠加 Modal',
-      'Multistage \n Multi-layer Modal'
-    ),
+    title: locate('多层 Modal \n 支持多层叠加 Modal', 'Multistage \n Multi-layer Modal'),
     component: require('doc/pages/components/Modal/example-5-multistage.js').default,
     rawText: require('!raw-loader!doc/pages/components/Modal/example-5-multistage.js'),
   },
@@ -105,17 +102,18 @@ const examples = [
   },
   {
     name: '8-type',
-    title: locate(
-      '类型 \n 使用 type 属性来指定标题附带的图标',
-      'type attribute \n use type display type icon'
-    ),
+    title: locate('类型 \n 使用 type 属性来指定标题附带的图标', 'type attribute \n use type display type icon'),
     component: require('doc/pages/components/Modal/example-8-type.js').default,
     rawText: require('!raw-loader!doc/pages/components/Modal/example-8-type.js'),
+  },
+  {
+    name: '9-zoom',
+    title: locate('缩放动画 \n 设置 zoom 属性来开启缩放动画', 'Zoom \n Set the zoom property to enable zoom animation'),
+    component: require('doc/pages/components/Modal/example-9-zoom.js').default,
+    rawText: require('!raw-loader!doc/pages/components/Modal/example-9-zoom.js'),
   },
 ]
 
 const codes = undefined
 
-export default navable(props => (
-  <MarkDown {...props} codes={codes} source={source} examples={examples} />
-))
+export default navable(props => <MarkDown {...props} codes={codes} source={source} examples={examples} />)
